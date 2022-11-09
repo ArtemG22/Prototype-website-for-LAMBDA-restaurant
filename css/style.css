@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+/******************************/
+/* HEADER */
+/******************************/
+
+.header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 2.2rem;
+  background: linear-gradient(to bottom, black -100%, transparent 90%);
+}
+
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Yeseva One", sans-serif;
+  text-decoration: none;
+  height: 2rem;
+  margin-left: 9.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  opacity: 0.9;
+}
+
+/******************************/
+/* NAVIGATION */
+/******************************/
+
+.container-nav {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin-left: 12.8rem;
+}
+
+.main-nav-link,
+.main-nav-link:link,
+.main-nav-link:visited,
+.main-nav-link:active {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  opacity: 75%;
+  transition: 0.3s;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.3rem;
+  margin-right: 5rem;
+  margin-top: 0.5rem;
+}
+
+.social-link:link,
+.social-link:visited {
+  text-decoration: none;
+  color: rgba(255, 230, 0, 0.8);
+  transition: all 0.3s;
+}
+
+.social-link:hover,
+.social-link:active {
+  opacity: 50%;
+  transition: 0.3s;
+}
+
+/******************************/
+/* PROMO SECTION */
+/******************************/
+
+.promo-section {
+  max-width: 100%;
+  height: 39.5rem;
+}
+
+.promo-banner {
+  background: url('../gallery/banners/promo-banner.jpg');
+  background-size: cover;
+  width: inherit;
+  height: 39.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.promo-slogan {
+  width: inherit;
+  height: 25rem;
+  margin-top: 9.8rem;
+}
+
+.slogan {
+  width: inherit;
+  padding: 0 2rem;
+  font-family: "Yeseva One", sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.promo-decoration {
+  width: inherit;
+  text-align: center;
+  margin-top: 2.3rem;
+}
+
+.decoration {
+  width: 12rem;
+}
+
+.buttons-bar {
+  width: inherit;
+  height: 3.5rem;
+  padding: 0 2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.buttons {
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 100;
+  padding: 1rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  margin-right: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn--outline:active {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.main-nav-link:focus::before {
+  opacity: 1;
+  transform: translate(0, 0.3rem);
+}
+
+.main-nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  height: 0.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav-link.is-active::before {
+  opacity: 1;
+  transform: translate(0, 0.3rem);
+}
+
+/* ************************************************************ */
+/* ************************************************************ */
+
+/******************************/
+/* ABOUT SECTION */
+/******************************/
+
+.about-section {
+  max-width: 100%;
+  height: 39.5rem;
+}
+
+.banner-about-section {
+  background: url('../gallery/banners/about-banner.jpg');
+  background-size: cover;
+  width: inherit;
+  height: 39.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.grid-about-section {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 6rem 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.slogan-about-section {
+  width: inherit;
+  padding: 0 2rem;
+  font-family: "Yeseva One", sans-serif;
+  padding: 0 1rem 0 8rem;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 100;
+  color: #e69824;  
+}
+
+.description-about-section {
+  width: inherit;
+  padding: 0 1rem 0 8rem;
+  font-family: "Aria", sans-serif;  
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: #000;  
+}
+
+.decoration-about-section {
+  width: inherit;
+  padding: 0 1rem 0 8rem;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+.decoration-about {
+  width: 14rem;
+}
+
+.cook-img-box {
+  padding: 0 1rem 0 8rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cook-img {
+  width: 40%;
+}
+
+.meal-img {
+  width: 90%;
+}
+
