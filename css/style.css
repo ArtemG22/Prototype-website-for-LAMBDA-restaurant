@@ -350,3 +350,21 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+/******************************/
+/* RESERVATIONS SECTION */
+/******************************/
+
+.reservations-banner {
+  max-width: 100%;
+  height: 39.5rem;
+}
+
+.banner-reservations-section {
+  background: url('../gallery/banners/reservations-banner.jpg');
+  background-size: cover;
+  width: inherit;
+  height: 39.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
