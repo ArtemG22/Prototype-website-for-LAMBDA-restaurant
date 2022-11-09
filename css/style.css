@@ -311,8 +311,32 @@ html {
   background-size: cover;
   width: inherit;
   height: 39.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+
+.dark-square {
+  width: 27rem;
+  height: 27rem;
+  background-color: #000;
+  opacity: 50%;
+  margin-left: 42rem;
+}
+
+.slogan-header {
+  height: 6rem;
+  width: 27rem;
+}
+
+.slogan-ingredients-section {
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 1.6rem;
+}
+
+.description-ingredients-section {
+  color: #fff;
+  padding: 0 4rem;
 }
 
 /******************************/
