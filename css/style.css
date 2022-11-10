@@ -317,9 +317,9 @@ html {
 .dark-square {
   width: 27rem;
   height: 27rem;
-  background-color: #000;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.5);  
   margin-left: 42rem;
+  box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .slogan-header {
@@ -332,11 +332,39 @@ html {
   text-align: center;
   padding-top: 4rem;
   font-size: 1.6rem;
+  font-family: "Yeseva One", sans-serif;
 }
 
 .description-ingredients-section {
   color: #fff;
-  padding: 0 4rem;
+  padding: 0 3.4rem;
+  margin-top: 0.7rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.76rem;
+}
+
+.decoration-ingredients-section {
+  width: inherit;  
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+.decoration-ingredients {
+  width: 10rem;
+}
+
+.meals-bar {  
+  display: flex;
+  margin-top: 4rem;
+  gap: 1.4rem;
+  justify-content: center;
+}
+
+.meals-circle {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 0.22rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
 }
 
 /******************************/
